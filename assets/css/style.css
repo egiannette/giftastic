@@ -1,0 +1,11 @@
+#form{
+	float: right;
+	font-size: 25px;
+	color: blue;
+}
+
+#submitbtn{
+	background-color: blue;
+	font-size: 25px;
+	color: white;
+}
