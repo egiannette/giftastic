@@ -2,10 +2,14 @@
 	float: right;
 	font-size: 25px;
 	color: blue;
+	margin-right: 60px;
 }
 
 #submitbtn{
 	background-color: blue;
 	font-size: 25px;
 	color: white;
+}
+#buttons{
+	margin: 30px;
 }

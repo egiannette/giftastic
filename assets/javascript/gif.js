@@ -1,5 +1,9 @@
-var topics = ["bobs burgers", "golden girls", "scooby doo"];
+var topics = ["bobs burgers", "golden girls", "scooby doo","the office","i love lucy","dr pol"];
 var queryURL = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=10";
+
+
+
+// api_key=dc6zaTOxFJmzC&taglimit=10
 
 for(var i=0; i< topics.length;i++){
     var button = $('<input type="button" value="' + topics[i] + '" + data-show class="showImage" />');
