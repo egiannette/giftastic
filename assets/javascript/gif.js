@@ -1,5 +1,6 @@
 var topics = ["bobs burgers", "golden girls", "scooby doo","the office","i love lucy","dr pol"];
-var queryURL = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC&limit=10&q=";
+// var queryURL = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC&limit=10&q=";
+var queryURL = "http://api.giphy.com/v1/gifs/search?q=";
 
 
 
@@ -46,7 +47,7 @@ $('#buttons').on('click','.showAddedImage',gifBtn);
 
 function gifBtn() {
     $("#gifsGoHere").empty();
-    var myQueryUrl = queryURL + $(this).attr("value");
+    var myQueryUrl = queryURL + $(this).attr("value")+ "&api_key=dc6zaTOxFJmzC&limit=10&q=";
     console.log(myQueryUrl);
 
     
