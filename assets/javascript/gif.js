@@ -13,6 +13,7 @@ for(var i=0; i< topics.length;i++){
 
    
 }
+$('#ratings')
 
 $('#submitbtn').on('click',function(){
     // preventDefault();
@@ -28,10 +29,10 @@ $('#gifsGoHere').on('click', '.tvImage', function(){
     var state = $(this).attr('data-state'); 
     console.log("state is " + state);
     if ( state == 'still'){
-        $(this).attr('src', $(this).data('data-animate'));
+        $(this).attr('src', $(this).data('animate'));
         $(this).attr('data-state', 'animate');
     }else{
-        $(this).attr('src', $(this).data('data-still'));
+        $(this).attr('src', $(this).data('still'));
         $(this).attr('data-state', 'still');
     }
 })
