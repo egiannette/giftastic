@@ -65,10 +65,10 @@ function gifBtn() {
                 var rating = results[i].rating;
                 var imageUrl = results[i].images.fixed_height.url;
                 var stillImageUrl = results[i].images.fixed_height_still.url;
-
+                // var p = $('<p>').text("Rating: " + rating);
                 console.log("imageUrl: " + imageUrl);
                 console.log("stillImageUrl: " + stillImageUrl);
-                console.log("rating" + rating);
+                console.log("rating: " + rating);
 
                 // Created a variable called show image
                 var showImage = $("<img>");
@@ -79,7 +79,9 @@ function gifBtn() {
                 showImage.attr('data-state', 'animate');
                 showImage.attr('data-animate', imageUrl);
                 showImage.attr('data-still',stillImageUrl);
-                showImage.attr('class', 'tvImage')
+                showImage.attr('class', 'tvImage');
+                showImage.append(p);
+
 
                 // Adding images before the content that's there 
                 $('#gifsGoHere').prepend(showImage);
